@@ -1,27 +1,28 @@
 package br.com.dio.desafio.dominio;
 
-public abstract class Conteudo {
+public abstract class Conteudo implements IConteudo {
 
     protected static final double XP_PADRAO = 10d;
 
     private String titulo;
     private String descricao;
 
-    public abstract double calcularXp();
+    public Conteudo(String titulo, String descricao) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+    }
+
+    @Override
+    public double calcularXp(){
+      return this.XP_PADRAO + 20d;
+    };
 
     public String getTitulo() {
         return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
 }

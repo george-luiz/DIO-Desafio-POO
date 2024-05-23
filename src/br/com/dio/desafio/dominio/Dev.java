@@ -8,18 +8,26 @@ public class Dev {
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>(); //LinkedHashSet: Não deixa ter palavras repetidas dentro do Array
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();//LinkedHashSet: Não deixa ter palavras repetidas dentro do Array
 
+    public Dev(String nome) {
+        this.nome = nome;
+    }
+
     public void inscreverParaOBootcamp(Bootcamp bootcamp) {
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
         bootcamp.getDevsInscritos().add(this);
     }
 
     public void progredir() {
-        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
-        if (conteudo.isPresent()) {
-            this.conteudosConcluidos.add(conteudo.get());
-            this.conteudosInscritos.remove(conteudo.get());
+        if(!conteudosInscritos.isEmpty()) {
+            Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
+            if (conteudo.isPresent()) {
+                this.conteudosConcluidos.add(conteudo.get());
+                this.conteudosInscritos.remove(conteudo.get());
+            } else {
+                throw new RuntimeException("Ao progredir a lista está vazia!");
+            }
         } else {
-            throw new RuntimeException("Ao progredir a lista está vazia!");
+            throw new RuntimeException("Ao progredir a lista conteudos inscritos está vazia!");
         }
     }
 
@@ -29,28 +37,28 @@ public class Dev {
                 .sum();
     }
 
-    public String getNome() {
-        return nome;
+    public void exibirConteudosInscritos() {
+        System.out.println("Conteúdos inscritos " + getNome() + ": " + getConteudosInscritos());
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void exibirConteudosConcluidos() {
+        System.out.println("Conteúdos concluidos " + getNome() + ": " + getConteudosConcluidos());
+    }
+
+    public void exibirTotalXP() {
+        System.out.println("Total Calculo XP " + getNome() + ": " + this.calcularTotalXP());
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public Set<Conteudo> getConteudosInscritos() {
         return conteudosInscritos;
     }
 
-    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
-        this.conteudosInscritos = conteudosInscritos;
-    }
-
     public Set<Conteudo> getConteudosConcluidos() {
         return conteudosConcluidos;
-    }
-
-    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
-        this.conteudosConcluidos = conteudosConcluidos;
     }
 
     @Override
