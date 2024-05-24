@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b8d7a8-99a7-4a07-89ac-ed3c96a59139" name="Changes" comment="Adicionado Readme">
-      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/IConteudo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/desaficioCodigo/Desafio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/desaficioCodigo/DesafiosContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/desaficioCodigo/MainContaBancaria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/desaficioCodigo/RegistroTransacoesBancariasComStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/desaficioCodigo/RegistroTransaoesBancarias.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Bootcamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Bootcamp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Conteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Conteudo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Curso.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Curso.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Dev.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Dev.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Mentoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DIO-Desafio-POO/br/com/dio/desafio/dominio/Mentoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Conteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Mentoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Mentoria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,9 +46,37 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.DesafiosContaBancaria">
+    <configuration name="Desafio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.dio.desafio.desaficioCodigo.Desafio" />
+      <module name="DIO-Desafio-POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesafiosContaBancaria" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.dio.desafio.desaficioCodigo.DesafiosContaBancaria" />
+      <module name="DIO-Desafio-POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainContaBancaria" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.dio.desafio.desaficioCodigo.MainContaBancaria" />
+      <module name="DIO-Desafio-POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistroTransacoesBancariasComStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.dio.desafio.desaficioCodigo.RegistroTransacoesBancariasComStream" />
+      <module name="DIO-Desafio-POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistroTransaoesBancarias" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.dio.desafio.desaficioCodigo.RegistroTransaoesBancarias" />
       <module name="DIO-Desafio-POO" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -63,7 +84,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DesafiosContaBancaria" />
+        <item itemvalue="Application.Desafio" />
+        <item itemvalue="Application.MainContaBancaria" />
+        <item itemvalue="Application.RegistroTransacoesBancariasComStream" />
+        <item itemvalue="Application.RegistroTransaoesBancarias" />
       </list>
     </recent_temporary>
   </component>
